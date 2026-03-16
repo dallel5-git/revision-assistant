@@ -36,3 +36,15 @@ Une application web interactive construite avec **Streamlit** et **LangChain** q
 Lancez l'application avec la commande suivante :
 ```bash
 streamlit run app.py
+-------------------------------------------- Architecture Technique -------------------------------------------
+L'application suit le flux suivant :
+
+Ingestion : Lecture du PDF.
+
+Splitting : Découpage en segments cohérents.
+
+Embedding : Vectorisation via sentence-transformers.
+
+Retrieval : Recherche de contexte pertinent dans FAISS.
+
+Generation : Réponse générée par le LLM via LangChain.
